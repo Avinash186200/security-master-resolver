@@ -1,0 +1,474 @@
+{
+ "test_seed": 100,
+ "train_seeds": [
+  1,
+  2,
+  3
+ ],
+ "train_candidates": 22734,
+ "train_true_links": 1513,
+ "resolver_config": {
+  "threshold": 0.5,
+  "band": [
+   0.2,
+   0.8
+  ]
+ },
+ "methods": {
+  "rule": {
+   "pairwise_precision": 0.9909,
+   "pairwise_recall": 0.4903,
+   "pairwise_f1": 0.656,
+   "true_pairs": 667,
+   "predicted_pairs": 330,
+   "correct_pairs": 327,
+   "chain_purity": 0.9983,
+   "chain_completeness": 0.8276,
+   "multi_vid_entities": 324,
+   "exact_chains": 0.463,
+   "candidates": 6885,
+   "seams_in_candidates": 470,
+   "same_entity_pairs_in_candidates": 500,
+   "accepted_links": 273,
+   "correct_links": 271,
+   "seam_links": 271,
+   "skip_links": 0,
+   "link_precision": 0.9927,
+   "link_recall": 0.5766,
+   "by_event": {
+    "id_reissue": {
+     "type": "true link",
+     "n": 262,
+     "recovered": 261,
+     "recall": 0.9962
+    },
+    "rename_reissue": {
+     "type": "true link",
+     "n": 134,
+     "recovered": 0,
+     "recall": 0.0
+    },
+    "merger_acquirer_reissue": {
+     "type": "true link",
+     "n": 29,
+     "recovered": 10,
+     "recall": 0.3448
+    },
+    "spinoff_parent_reissue": {
+     "type": "true link",
+     "n": 18,
+     "recovered": 0,
+     "recall": 0.0
+    },
+    "delist_relist": {
+     "type": "true link",
+     "n": 27,
+     "recovered": 0,
+     "recall": 0.0
+    },
+    "ticker_reuse": {
+     "type": "look-alike",
+     "n": 73,
+     "not_candidates": 34,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "ticker_reuse_quick": {
+     "type": "look-alike",
+     "n": 24,
+     "not_candidates": 15,
+     "wrongly_merged": 2,
+     "false_merge_rate": 0.0833
+    },
+    "merger_target": {
+     "type": "look-alike",
+     "n": 29,
+     "not_candidates": 0,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "spinoff_child": {
+     "type": "look-alike",
+     "n": 18,
+     "not_candidates": 26,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "other_false_links": {
+     "type": "coincidence",
+     "n": 0
+    }
+   }
+  },
+  "ids_only": {
+   "pairwise_precision": 0.955,
+   "pairwise_recall": 0.6687,
+   "pairwise_f1": 0.7866,
+   "true_pairs": 667,
+   "predicted_pairs": 467,
+   "correct_pairs": 446,
+   "chain_purity": 0.9875,
+   "chain_completeness": 0.8943,
+   "multi_vid_entities": 324,
+   "exact_chains": 0.6451,
+   "candidates": 6885,
+   "seams_in_candidates": 470,
+   "same_entity_pairs_in_candidates": 500,
+   "accepted_links": 363,
+   "correct_links": 349,
+   "seam_links": 349,
+   "skip_links": 0,
+   "link_precision": 0.9614,
+   "link_recall": 0.7426,
+   "by_event": {
+    "id_reissue": {
+     "type": "true link",
+     "n": 262,
+     "recovered": 262,
+     "recall": 1.0
+    },
+    "rename_reissue": {
+     "type": "true link",
+     "n": 134,
+     "recovered": 43,
+     "recall": 0.3209
+    },
+    "merger_acquirer_reissue": {
+     "type": "true link",
+     "n": 29,
+     "recovered": 20,
+     "recall": 0.6897
+    },
+    "spinoff_parent_reissue": {
+     "type": "true link",
+     "n": 18,
+     "recovered": 18,
+     "recall": 1.0
+    },
+    "delist_relist": {
+     "type": "true link",
+     "n": 27,
+     "recovered": 6,
+     "recall": 0.2222
+    },
+    "ticker_reuse": {
+     "type": "look-alike",
+     "n": 73,
+     "not_candidates": 34,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "ticker_reuse_quick": {
+     "type": "look-alike",
+     "n": 24,
+     "not_candidates": 15,
+     "wrongly_merged": 7,
+     "false_merge_rate": 0.2917
+    },
+    "merger_target": {
+     "type": "look-alike",
+     "n": 29,
+     "not_candidates": 0,
+     "wrongly_merged": 6,
+     "false_merge_rate": 0.2069
+    },
+    "spinoff_child": {
+     "type": "look-alike",
+     "n": 18,
+     "not_candidates": 26,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "other_false_links": {
+     "type": "coincidence",
+     "n": 3
+    }
+   }
+  },
+  "price_only": {
+   "pairwise_precision": 0.995,
+   "pairwise_recall": 0.8906,
+   "pairwise_f1": 0.9399,
+   "true_pairs": 667,
+   "predicted_pairs": 597,
+   "correct_pairs": 594,
+   "chain_purity": 0.9983,
+   "chain_completeness": 0.9617,
+   "multi_vid_entities": 324,
+   "exact_chains": 0.8642,
+   "candidates": 6885,
+   "seams_in_candidates": 470,
+   "same_entity_pairs_in_candidates": 500,
+   "accepted_links": 429,
+   "correct_links": 427,
+   "seam_links": 427,
+   "skip_links": 0,
+   "link_precision": 0.9953,
+   "link_recall": 0.9085,
+   "by_event": {
+    "id_reissue": {
+     "type": "true link",
+     "n": 262,
+     "recovered": 262,
+     "recall": 1.0
+    },
+    "rename_reissue": {
+     "type": "true link",
+     "n": 134,
+     "recovered": 134,
+     "recall": 1.0
+    },
+    "merger_acquirer_reissue": {
+     "type": "true link",
+     "n": 29,
+     "recovered": 29,
+     "recall": 1.0
+    },
+    "spinoff_parent_reissue": {
+     "type": "true link",
+     "n": 18,
+     "recovered": 2,
+     "recall": 0.1111
+    },
+    "delist_relist": {
+     "type": "true link",
+     "n": 27,
+     "recovered": 0,
+     "recall": 0.0
+    },
+    "ticker_reuse": {
+     "type": "look-alike",
+     "n": 73,
+     "not_candidates": 34,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "ticker_reuse_quick": {
+     "type": "look-alike",
+     "n": 24,
+     "not_candidates": 15,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "merger_target": {
+     "type": "look-alike",
+     "n": 29,
+     "not_candidates": 0,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "spinoff_child": {
+     "type": "look-alike",
+     "n": 18,
+     "not_candidates": 26,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "other_false_links": {
+     "type": "coincidence",
+     "n": 2
+    }
+   }
+  },
+  "combined": {
+   "pairwise_precision": 0.9969,
+   "pairwise_recall": 0.9535,
+   "pairwise_f1": 0.9747,
+   "true_pairs": 667,
+   "predicted_pairs": 638,
+   "correct_pairs": 636,
+   "chain_purity": 0.9983,
+   "chain_completeness": 0.9833,
+   "multi_vid_entities": 324,
+   "exact_chains": 0.9414,
+   "candidates": 6885,
+   "seams_in_candidates": 470,
+   "same_entity_pairs_in_candidates": 500,
+   "accepted_links": 453,
+   "correct_links": 451,
+   "seam_links": 451,
+   "skip_links": 0,
+   "link_precision": 0.9956,
+   "link_recall": 0.9596,
+   "by_event": {
+    "id_reissue": {
+     "type": "true link",
+     "n": 262,
+     "recovered": 262,
+     "recall": 1.0
+    },
+    "rename_reissue": {
+     "type": "true link",
+     "n": 134,
+     "recovered": 129,
+     "recall": 0.9627
+    },
+    "merger_acquirer_reissue": {
+     "type": "true link",
+     "n": 29,
+     "recovered": 29,
+     "recall": 1.0
+    },
+    "spinoff_parent_reissue": {
+     "type": "true link",
+     "n": 18,
+     "recovered": 18,
+     "recall": 1.0
+    },
+    "delist_relist": {
+     "type": "true link",
+     "n": 27,
+     "recovered": 13,
+     "recall": 0.4815
+    },
+    "ticker_reuse": {
+     "type": "look-alike",
+     "n": 73,
+     "not_candidates": 34,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "ticker_reuse_quick": {
+     "type": "look-alike",
+     "n": 24,
+     "not_candidates": 15,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "merger_target": {
+     "type": "look-alike",
+     "n": 29,
+     "not_candidates": 0,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "spinoff_child": {
+     "type": "look-alike",
+     "n": 18,
+     "not_candidates": 26,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "other_false_links": {
+     "type": "coincidence",
+     "n": 2
+    }
+   }
+  },
+  "combined_llm_mock": {
+   "pairwise_precision": 0.9904,
+   "pairwise_recall": 0.9325,
+   "pairwise_f1": 0.9606,
+   "true_pairs": 667,
+   "predicted_pairs": 628,
+   "correct_pairs": 622,
+   "chain_purity": 0.9967,
+   "chain_completeness": 0.9784,
+   "multi_vid_entities": 324,
+   "exact_chains": 0.9198,
+   "candidates": 6885,
+   "seams_in_candidates": 470,
+   "same_entity_pairs_in_candidates": 500,
+   "accepted_links": 449,
+   "correct_links": 445,
+   "seam_links": 445,
+   "skip_links": 0,
+   "link_precision": 0.9911,
+   "link_recall": 0.9468,
+   "adjudication": {
+    "ambiguous_pairs": 72,
+    "calls": 72,
+    "parse_failures": 0,
+    "flipped_to_link": 33,
+    "flipped_to_no_link": 19
+   },
+   "by_event": {
+    "id_reissue": {
+     "type": "true link",
+     "n": 262,
+     "recovered": 262,
+     "recall": 1.0
+    },
+    "rename_reissue": {
+     "type": "true link",
+     "n": 134,
+     "recovered": 116,
+     "recall": 0.8657
+    },
+    "merger_acquirer_reissue": {
+     "type": "true link",
+     "n": 29,
+     "recovered": 28,
+     "recall": 0.9655
+    },
+    "spinoff_parent_reissue": {
+     "type": "true link",
+     "n": 18,
+     "recovered": 18,
+     "recall": 1.0
+    },
+    "delist_relist": {
+     "type": "true link",
+     "n": 27,
+     "recovered": 21,
+     "recall": 0.7778
+    },
+    "ticker_reuse": {
+     "type": "look-alike",
+     "n": 73,
+     "not_candidates": 34,
+     "wrongly_merged": 1,
+     "false_merge_rate": 0.0137
+    },
+    "ticker_reuse_quick": {
+     "type": "look-alike",
+     "n": 24,
+     "not_candidates": 15,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "merger_target": {
+     "type": "look-alike",
+     "n": 29,
+     "not_candidates": 0,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "spinoff_child": {
+     "type": "look-alike",
+     "n": 18,
+     "not_candidates": 26,
+     "wrongly_merged": 0,
+     "false_merge_rate": 0.0
+    },
+    "other_false_links": {
+     "type": "coincidence",
+     "n": 3
+    }
+   }
+  }
+ },
+ "llm_band": {
+  "n": 72,
+  "true_links": 35,
+  "model_threshold_accuracy": 0.6944,
+  "adjudicator_accuracy": 0.3333,
+  "adjudicator_fixed": 13,
+  "adjudicator_broke": 39
+ },
+ "combined_coefficients": {
+  "gap": 0.7742,
+  "log_gap": -3.314,
+  "overlap": -1.5797,
+  "short_gap": 0.8163,
+  "ticker_eq": 1.0458,
+  "ticker_sim": -0.1381,
+  "name_sim": 2.0801,
+  "exchange_eq": 0.8027,
+  "abs_z": -3.9909,
+  "abs_log_volume_ratio": -2.8004,
+  "has_overlap_corr": -1.9336,
+  "overlap_corr": 1.8024,
+  "abs_log_vol_ratio": -1.4632
+ }
+}

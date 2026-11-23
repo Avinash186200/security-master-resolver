@@ -1,0 +1,62 @@
+{
+ "config": {
+  "seed": 100,
+  "start": "2012-01-02",
+  "years": 10,
+  "n_initial": 400,
+  "ipo_per_year": 30.0,
+  "p_bankrupt": 0.1,
+  "p_acquired": 0.12,
+  "p_acquirer_reissue": 0.4,
+  "p_spinoff": 0.06,
+  "p_spin_parent_reissue": 0.4,
+  "reissue_rate": 0.05,
+  "rename_rate": 0.04,
+  "p_rename_reissue": 0.6,
+  "p_delist_relist": 0.04,
+  "exchange_transfer_rate": 0.02,
+  "p_ticker_reuse": 0.3,
+  "p_quick_reuse": 0.4,
+  "p_overlap": 0.3
+ },
+ "test": {
+  "days": 2520,
+  "first_date": "2012-01-02",
+  "last_date": "2021-08-27",
+  "entities": 731,
+  "vids": 1201,
+  "entities_with_2plus_vids": 324,
+  "segments": 1373,
+  "events": {
+   "acquired": 75,
+   "bankrupt": 66,
+   "delist": 27,
+   "delist_relist": 27,
+   "exchange_transfer": 88,
+   "id_reissue": 262,
+   "initial": 400,
+   "ipo": 287,
+   "merger": 75,
+   "merger_acquirer_reissue": 29,
+   "rename": 84,
+   "rename_reissue": 134,
+   "spinoff": 44,
+   "spinoff_parent": 44,
+   "spinoff_parent_reissue": 18,
+   "taken_private": 10
+  },
+  "seams": {
+   "delist_relist": 27,
+   "id_reissue": 262,
+   "merger_acquirer_reissue": 29,
+   "rename_reissue": 134,
+   "spinoff_parent_reissue": 18
+  },
+  "hard_negatives": {
+   "merger_target": 29,
+   "spinoff_child": 44,
+   "ticker_reuse": 107,
+   "ticker_reuse_quick": 39
+  }
+ }
+}

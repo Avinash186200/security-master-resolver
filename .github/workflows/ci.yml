@@ -1,0 +1,34 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: pip install -c constraints.txt -e ".[dev]"
+      - name: Run tests (includes a full rerun checked against results/*.json)
+        run: pytest -q
+      - name: CLI runs end to end
+        run: |
+          python -m secmaster.cli generate --seed 5 --n-initial 120 --years 5 --out /tmp/data
+          python -m secmaster.cli resolve --data /tmp/data --db /tmp/sm.sqlite --model results/scorer_combined.json --llm mock
+
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

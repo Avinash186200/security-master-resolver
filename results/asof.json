@@ -1,0 +1,89 @@
+{
+ "ticker": "OVSK",
+ "queries": [
+  {
+   "as_of": "2012-04-10",
+   "rows": [
+    {
+     "resolved_id": "R00295",
+     "vid": "V762026",
+     "ticker": "OVSK",
+     "name": "Westgate Logistics Company",
+     "exchange": "XNYS",
+     "valid_from": "2012-01-02",
+     "valid_to": "2012-04-10",
+     "known_from": "2012-01-02",
+     "linked": 1
+    }
+   ]
+  },
+  {
+   "as_of": "2017-01-09",
+   "rows": [
+    {
+     "resolved_id": "R00411",
+     "vid": "V362170",
+     "ticker": "OVSK",
+     "name": "ORION MINERALS CORP",
+     "exchange": "XNYS",
+     "valid_from": "2012-05-24",
+     "valid_to": "2021-08-27",
+     "known_from": "2012-05-24",
+     "linked": 1
+    }
+   ]
+  }
+ ],
+ "entity": {
+  "resolved_id": "R00005",
+  "rows": [
+   {
+    "resolved_id": "R00005",
+    "vid": "V105562",
+    "ticker": "HMGG",
+    "name": "Tamarack Semiconductor Group",
+    "exchange": "XNAS",
+    "valid_from": "2012-01-02",
+    "valid_to": "2012-08-02",
+    "known_from": "2012-01-02"
+   },
+   {
+    "resolved_id": "R00005",
+    "vid": "V542941",
+    "ticker": "ISS",
+    "name": "IRONWOOD SOFTWARE INC.",
+    "exchange": "XNAS",
+    "valid_from": "2012-08-03",
+    "valid_to": "2013-10-09",
+    "known_from": "2012-08-31"
+   },
+   {
+    "resolved_id": "R00005",
+    "vid": "V197982",
+    "ticker": "ISS",
+    "name": "Ironwood Software Incorporated",
+    "exchange": "XNAS",
+    "valid_from": "2013-10-10",
+    "valid_to": "2020-03-13",
+    "known_from": "2013-11-07"
+   }
+  ]
+ },
+ "entity_known_on": {
+  "known_on": "2012-08-30",
+  "rows": [
+   {
+    "resolved_id": "R00005",
+    "vid": "V105562",
+    "ticker": "HMGG",
+    "name": "Tamarack Semiconductor Group",
+    "exchange": "XNAS",
+    "valid_from": "2012-01-02",
+    "valid_to": "2012-08-02",
+    "known_from": "2012-01-02"
+   }
+  ]
+ },
+ "table_rows": 1373,
+ "resolved_entities": 748
+}
